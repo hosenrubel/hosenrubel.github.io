@@ -198,3 +198,7 @@ p{
   pointer-events: none;
   display: flex;
 }
+
+#about .card, #contact .card{
+  border: none;
+}
