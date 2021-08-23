@@ -152,6 +152,7 @@ section.resume-section .resume-item .resume-date {
 @media (max-width: 768px) {
   #intro-pic{
     order: 1;
+    display: none;
   }
   #intro-text{
     order: 2;
