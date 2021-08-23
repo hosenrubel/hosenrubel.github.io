@@ -157,6 +157,9 @@ section.resume-section .resume-item .resume-date {
   #intro-text{
     order: 2;
   }
+  #name-position{
+    display: none;
+  }
 }
 
 @media (min-width: 992px) {
