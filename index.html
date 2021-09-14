@@ -1199,6 +1199,7 @@
 		});
 		typed.start();
 	}
+	
 
 	function monthDiff(d1, d2) {
 		var months;
@@ -1220,5 +1221,22 @@
 		}
 		return stringYear + stringMonth;
 	}
+
+	
+	window.addEventListener('DOMContentLoaded', event => {
+		const navbarToggler = document.body.querySelector('.navbar-toggler');
+		const responsiveNavItems = [].slice.call(
+			document.querySelectorAll('#navbarSupportedContent .nav-link')
+		);
+		responsiveNavItems.map(function (responsiveNavItem) {
+			responsiveNavItem.addEventListener('click', () => {
+				if (window.getComputedStyle(navbarToggler).display !== 'none') {
+					navbarToggler.click();
+				}
+			});
+		});
+	});
+	
+	
 </script>
 </html>
